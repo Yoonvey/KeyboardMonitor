@@ -117,9 +117,7 @@
 - (void)keyBoardWillDismiss
 {
     [UIView animateWithDuration:[KeyboardMonitor sltObject].animationTime animations:^{
-        [UIView animateWithDuration:[KeyboardMonitor sltObject].animationTime animations:^{
-            self.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
-        }];
+        self.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
     }];
 }
 
